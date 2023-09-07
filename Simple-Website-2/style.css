@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url(egor-yakushkin-AtQoiUN_w1s-unsplash.jpg);
+    background-size: cover;
+
+
+}
+
+.container {
+    width: 80%;
+    height: 100px;
+    margin: auto;
+
+
+}
+
+
+/*! header start */
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+
+}
+
+
+header nav .logo a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+nav .menu {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    column-gap: 30px;
+}
+
+
+
+header nav ul a {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+
+
+}
+
+header nav ul a:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 12px 24px;
+    border-radius: 56px;
+    color: #0ba2c0;
+}
+
+
+
+nav .menu-btn {
+    text-decoration: none;
+    color: #0ba2c0;
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 12px 24px;
+    border-radius: 56px;
+    transition: 0.5s;
+}
+
+nav .menu-btn:hover {
+    background-color: #0ba2c0;
+    color: white;
+}
+
+/*! header end */
+
+/*! section start */
+
+section {
+    color: white;
+    height: calc(100vh);
+    padding-top: 120px;
+}
+
+section h1 {
+    text-align: center;
+    font-size: 60px;
+}
+
+section p {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 32px;
+}
+
+section .btns {
+    display: flex;
+    justify-content: center;
+    column-gap: 16px;
+    margin-top: 20px;
+}
+
+section .btns a {
+    margin-top: 50px;
+    text-decoration: none;
+    padding: 20px;
+    width: 280px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 40px;
+    transition: all 0.25s ease-in;
+}
+
+section .btns a:hover {
+    background-color: #0ba2c0;
+    color: white;
+}
+
+/*! section end */
+
+/*! responsive start */
+
+@media(max-width:576px) {
+    .container {
+        width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .menu ul {
+        column-gap: 20px;
+    }
+
+    .menu .menu-btn {
+        display: none;
+    }
+
+    .content {
+        padding-top: 50px;
+    }
+
+    .content h1 {
+        font-size: 36px;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+
+    .content .btns {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 0.5rem;
+    }
+
+    .content .btns a {
+        padding: 10px;
+        width: 90%;
+    }
+}
+
+
+/*! responsive end */
